@@ -21,7 +21,7 @@ public class ConnectionManager
 		String password=properties.getProperty("password");
 		Class.forName(driver);
 	    Connection con;
-		con=DriverManager.getConnection(url,user,password);
+		con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:shrikant","system","Anil7398");
 		 
 		 return con;
 	 }

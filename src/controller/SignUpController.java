@@ -33,13 +33,7 @@ public class SignUpController extends HttpServlet {
 		Connection con = null;
 		try {
 			con=ConnectionManager.getConnection();
-		} catch (ClassNotFoundException e) {
-			
-			e.printStackTrace();
-		} catch (SQLException e) {
-			
-			e.printStackTrace();
-		} catch (IOException e) {
+		} catch (ClassNotFoundException | SQLException e) {
 			
 			e.printStackTrace();
 		}
